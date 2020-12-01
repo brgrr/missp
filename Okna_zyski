@@ -1,0 +1,14 @@
+\* Okna_zyski *\
+Maximize
+Maksymalny_Zysk: 3 Partie_okien_aluminiowych + 5 Partie_okien_drewnianych
+Subject To
+Fabryka_1: Partie_okien_aluminiowych <= 4
+Fabryka_2: 2 Partie_okien_drewnianych <= 12
+Fabryka_3: 3 Partie_okien_aluminiowych + 2 Partie_okien_drewnianych <= 18
+Bounds
+0 <= Partie_okien_aluminiowych
+0 <= Partie_okien_drewnianych
+Generals
+Partie_okien_aluminiowych
+Partie_okien_drewnianych
+End
