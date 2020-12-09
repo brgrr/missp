@@ -1,0 +1,56 @@
+\* Sklep *\
+Minimize
+OBJ: 800 AniaCzw + 800 AniaPia + 800 AniaPon + 800 AniaSr + 800 AniaWt
+ + 480 HektorCzw + 480 HektorPia + 480 HektorPon + 480 HektorSr + 480 HektorWt
+ + 880 LidiaCzw + 880 LidiaPia + 880 LidiaPon + 880 LidiaSr + 880 LidiaWt
+ + 320 OlafCzw + 320 OlafPia + 320 OlafPon + 320 OlafSr + 320 OlafWt
+ + 560 PiotrCzw + 560 PiotrPia + 560 PiotrPon + 560 PiotrSr + 560 PiotrWt
+ + 400 StefanCzw + 400 StefanPia + 400 StefanPon + 400 StefanSr + 400 StefanWt
+Subject To
+_C1: StefanCzw + StefanPia + StefanSr + StefanWt = 0
+_C10: AniaCzw + AniaPia + AniaPon + AniaSr + AniaWt <= 3
+_C11: StefanCzw + StefanPia + StefanPon + StefanSr + StefanWt <= 3
+_C12: HektorCzw + HektorPia + HektorPon + HektorSr + HektorWt <= 3
+_C13: OlafCzw + OlafPia + OlafPon + OlafSr + OlafWt <= 3
+_C14: LidiaCzw + LidiaPia + LidiaPon + LidiaSr + LidiaWt <= 3
+_C15: PiotrCzw + PiotrPia + PiotrPon + PiotrSr + PiotrWt <= 3
+_C2: HektorCzw + HektorPia = 0
+_C3: LidiaPon + LidiaSr + LidiaWt = 0
+_C4: PiotrCzw + PiotrPia = 0
+_C5: AniaPon + HektorPon + LidiaPon + OlafPon + PiotrPon + StefanPon = 2
+_C6: AniaWt + HektorWt + LidiaWt + OlafWt + PiotrWt + StefanWt = 1
+_C7: AniaSr + HektorSr + LidiaSr + OlafSr + PiotrSr + StefanSr = 1
+_C8: AniaCzw + HektorCzw + LidiaCzw + OlafCzw + PiotrCzw + StefanCzw = 1
+_C9: AniaPia + HektorPia + LidiaPia + OlafPia + PiotrPia + StefanPia = 3
+Binaries
+AniaCzw
+AniaPia
+AniaPon
+AniaSr
+AniaWt
+HektorCzw
+HektorPia
+HektorPon
+HektorSr
+HektorWt
+LidiaCzw
+LidiaPia
+LidiaPon
+LidiaSr
+LidiaWt
+OlafCzw
+OlafPia
+OlafPon
+OlafSr
+OlafWt
+PiotrCzw
+PiotrPia
+PiotrPon
+PiotrSr
+PiotrWt
+StefanCzw
+StefanPia
+StefanPon
+StefanSr
+StefanWt
+End
